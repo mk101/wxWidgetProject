@@ -36,7 +36,7 @@ void DrawPane::render(wxDC& dc) {
     dc.SetPen(*wxRED_PEN);
 
     for (int i = 0; i <= x; i++) {
-        dc.DrawLine(wxPoint(i, 300 + data[k + i] / 4), wxPoint((i + 1), 300 + data[k + i + 1] / 4));
+        dc.DrawLine(wxPoint(i, 260 - data[k + i] / 4), wxPoint((i + 1), 260 - data[k + i + 1] / 4));
     }
 
     dc.DrawText(wxString::Format("%d/%d", k, size), wxPoint(20, 20));
